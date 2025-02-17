@@ -7,7 +7,7 @@ Test Setup              Begin Web Test
 Test Teardown           End Web Test
 
 
-#robot -d results tests/crm.robot
+#robot -d results tests/amazon.robot
 
 *** Variables ***
 ${BROWSER}                edge
