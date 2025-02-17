@@ -7,7 +7,7 @@ Test Setup              Begin Web Test
 Test Teardown           End Web Test
 
 
-#robot -d results tests/crm.robot
+#robot -d results tests/amazon.robot
 
 *** Variables ***
 ${BROWSER}                edge
@@ -25,7 +25,7 @@ User can search for product
     [Documentation]                 This is some basic TEST
     [Tags]                          Current
     AmazonApp.Search For Product
-    sleep                           10s
+    # sleep                           10s
 
 User must sign in to checkout
     [Documentation]                 This is some basic TEST
@@ -34,6 +34,8 @@ User must sign in to checkout
     AmazonApp.Select Product from Search Results
     AmazonApp.Add Product to Cart
     AmazonApp.Begin Checkout
+
+    sleep                            30s
 
 
 
