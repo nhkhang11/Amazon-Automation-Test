@@ -14,7 +14,6 @@ Search for Products
     Submit Search
 
 Enter Search Items
-    sleep     30s
     input text                      ${TOPNAV_SEARCH_BAR}      ${SEARCH_ITEM}
     
 Submit Search
