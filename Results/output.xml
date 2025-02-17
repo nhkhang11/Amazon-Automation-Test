@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.3 on win32)" generated="2025-02-17T12:27:14.131197" rpa="false" schemaversion="5">
+<suite id="s1" name="Amazon" source="C:\Users\SURFACE\Desktop\CRM\amazon_automation_test\Tests\amazon.robot">
+<test id="s1-t1" name="Should be able to login" line="21">
+<kw name="Begin Web Test" owner="Common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-17T12:27:14.640270" level="INFO">Opening browser 'edge' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-17T12:27:14.640270" elapsed="2.516278"/>
+</kw>
+<status status="PASS" start="2025-02-17T12:27:14.640270" elapsed="2.516278"/>
+</kw>
+<kw name="Login" owner="AmazonApp">
+<kw name="Login With Valid Credentials" owner="SignIn">
+<kw name="Fill Email Field" owner="SignIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-17T12:27:17.160586" level="INFO">Filling Email field with admin@robotframeworktutorial.com</msg>
+<arg>Filling Email field with ${Username}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-17T12:27:17.158572" elapsed="0.002014"/>
+</kw>
+<arg>${Username}</arg>
+<status status="PASS" start="2025-02-17T12:27:17.158572" elapsed="0.002014"/>
+</kw>
+<kw name="Fill Password Field" owner="SignIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-17T12:27:17.162601" level="INFO">Filling Password field with myPassword1</msg>
+<arg>Filling Password field with ${Password}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-17T12:27:17.160586" elapsed="0.002015"/>
+</kw>
+<arg>${Password}</arg>
+<status status="PASS" start="2025-02-17T12:27:17.160586" elapsed="0.002015"/>
+</kw>
+<kw name="Click Submit Button" owner="SignIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-17T12:27:17.162601" level="INFO">Clicking submit button</msg>
+<arg>Clicking submit button</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-17T12:27:17.162601" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-02-17T12:27:17.162601" elapsed="0.002012"/>
+</kw>
+<arg>${Username}</arg>
+<arg>${Password}</arg>
+<status status="PASS" start="2025-02-17T12:27:17.158572" elapsed="0.006041"/>
+</kw>
+<arg>${LOGIN_EMAIL}</arg>
+<arg>${LOGIN_PASSWORD}</arg>
+<status status="PASS" start="2025-02-17T12:27:17.157271" elapsed="0.007342"/>
+</kw>
+<kw name="End Web Test" owner="Common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-17T12:27:17.169478" elapsed="2.436348"/>
+</kw>
+<status status="PASS" start="2025-02-17T12:27:17.168466" elapsed="2.437360"/>
+</kw>
+<status status="PASS" start="2025-02-17T12:27:14.638257" elapsed="4.967569"/>
+</test>
+<test id="s1-t2" name="User can search for product" line="24">
+<kw name="Begin Web Test" owner="Common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-17T12:27:19.605826" level="INFO">Opening browser 'edge' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-17T12:27:19.605826" elapsed="2.082258"/>
+</kw>
+<status status="PASS" start="2025-02-17T12:27:19.605826" elapsed="2.083258"/>
+</kw>
+<kw name="Search For Product" owner="AmazonApp">
+<kw name="Load" owner="LandingPage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-02-17T12:27:21.690929" level="INFO">Opening url 'https://www.amazon.com/ref=nav_logo'</msg>
+<arg>https://www.amazon.com/ref=nav_logo</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-02-17T12:27:21.690421" elapsed="3.200298"/>
+</kw>
+<status status="PASS" start="2025-02-17T12:27:21.690421" elapsed="3.200298"/>
+</kw>
+<kw name="Verify Page Loaded" owner="LandingPage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Amazon</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-17T12:27:24.891719" elapsed="0.143241"/>
+</kw>
+<status status="PASS" start="2025-02-17T12:27:24.890719" elapsed="0.145246"/>
+</kw>
+<kw name="Search for Products" owner="TopNav">
+<kw name="Enter Search Items" owner="TopNav">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-17T12:27:25.036967" level="INFO">Typing text 'Keychron' into text field 'id=twotabsearchtextbox'.</msg>
+<arg>${TOPNAV_SEARCH_BAR}</arg>
+<arg>${SEARCH_ITEM}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T12:27:25.036967" elapsed="0.309533"/>
+</kw>
+<status status="PASS" start="2025-02-17T12:27:25.036967" elapsed="0.309533"/>
+</kw>
+<kw name="Submit Search" owner="TopNav">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-02-17T12:27:25.348510" level="INFO">Clicking button 'xpath=//input[@type='submit' and @value='Go' and (contains(@class,'nav-bb-button') or @id='nav-search-submit-button')]'.</msg>
+<arg>${TOPNAV_SEARCH_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T12:27:25.347512" elapsed="3.835269"/>
+</kw>
+<status status="PASS" start="2025-02-17T12:27:25.347512" elapsed="3.835269"/>
+</kw>
+<status status="PASS" start="2025-02-17T12:27:25.035965" elapsed="4.146816"/>
+</kw>
+<status status="PASS" start="2025-02-17T12:27:21.689084" elapsed="7.493697"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-17T12:27:39.185699" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-17T12:27:29.183792" elapsed="10.002418"/>
+</kw>
+<kw name="End Web Test" owner="Common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-17T12:27:39.189272" elapsed="2.505892"/>
+</kw>
+<status status="PASS" start="2025-02-17T12:27:39.187228" elapsed="2.508947"/>
+</kw>
+<doc>This is some basic TEST</doc>
+<tag>Current</tag>
+<status status="PASS" start="2025-02-17T12:27:19.605826" elapsed="22.090349"/>
+</test>
+<test id="s1-t3" name="User must sign in to checkout" line="30">
+<kw name="Begin Web Test" owner="Common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-17T12:27:41.702251" level="INFO">Opening browser 'edge' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-17T12:27:41.701158" elapsed="2.042507"/>
+</kw>
+<status status="PASS" start="2025-02-17T12:27:41.700157" elapsed="2.044021"/>
+</kw>
+<kw name="Search For Product" owner="AmazonApp">
+<kw name="Load" owner="LandingPage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-02-17T12:27:43.746094" level="INFO">Opening url 'https://www.amazon.com/ref=nav_logo'</msg>
+<arg>https://www.amazon.com/ref=nav_logo</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-02-17T12:27:43.746094" elapsed="1.832932"/>
+</kw>
+<status status="PASS" start="2025-02-17T12:27:43.745080" elapsed="1.834960"/>
+</kw>
+<kw name="Verify Page Loaded" owner="LandingPage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Amazon</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-17T12:27:45.582039" elapsed="0.037386"/>
+</kw>
+<status status="PASS" start="2025-02-17T12:27:45.581035" elapsed="0.038390"/>
+</kw>
+<kw name="Search for Products" owner="TopNav">
+<kw name="Enter Search Items" owner="TopNav">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-17T12:27:45.622427" level="INFO">Typing text 'Keychron' into text field 'id=twotabsearchtextbox'.</msg>
+<msg time="2025-02-17T12:27:46.398616" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-54.png"&gt;&lt;img src="selenium-screenshot-54.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-17T12:27:46.399614" level="FAIL">Element with locator 'id=twotabsearchtextbox' not found.</msg>
+<arg>${TOPNAV_SEARCH_BAR}</arg>
+<arg>${SEARCH_ITEM}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-02-17T12:27:45.621427" elapsed="0.791740">Element with locator 'id=twotabsearchtextbox' not found.</status>
+</kw>
+<status status="FAIL" start="2025-02-17T12:27:45.621427" elapsed="0.792741">Element with locator 'id=twotabsearchtextbox' not found.</status>
+</kw>
+<kw name="Submit Search" owner="TopNav">
+<status status="NOT RUN" start="2025-02-17T12:27:46.415166" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-02-17T12:27:45.620426" elapsed="0.794740">Element with locator 'id=twotabsearchtextbox' not found.</status>
+</kw>
+<status status="FAIL" start="2025-02-17T12:27:43.744178" elapsed="2.671992">Element with locator 'id=twotabsearchtextbox' not found.</status>
+</kw>
+<kw name="Select Product from Search Results" owner="AmazonApp">
+<status status="NOT RUN" start="2025-02-17T12:27:46.417160" elapsed="0.000000"/>
+</kw>
+<kw name="Add Product to Cart" owner="AmazonApp">
+<status status="NOT RUN" start="2025-02-17T12:27:46.417160" elapsed="0.000000"/>
+</kw>
+<kw name="Begin Checkout" owner="AmazonApp">
+<status status="NOT RUN" start="2025-02-17T12:27:46.418168" elapsed="0.000999"/>
+</kw>
+<kw name="End Web Test" owner="Common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-17T12:27:46.421164" elapsed="2.387288"/>
+</kw>
+<status status="PASS" start="2025-02-17T12:27:46.420164" elapsed="2.389332"/>
+</kw>
+<doc>This is some basic TEST</doc>
+<tag>Smoke</tag>
+<status status="FAIL" start="2025-02-17T12:27:41.698162" elapsed="7.111334">Element with locator 'id=twotabsearchtextbox' not found.</status>
+</test>
+<doc>first test</doc>
+<status status="FAIL" start="2025-02-17T12:27:14.133206" elapsed="34.679263"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Current</stat>
+<stat pass="0" fail="1" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat name="Amazon" id="s1" pass="2" fail="1" skip="0">Amazon</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-02-17T12:27:14.631436" level="ERROR">Error in file 'C:\Users\SURFACE\Desktop\CRM\amazon_automation_test\Resources\PO\SignIn.robot' on line 6: Setting variable '${SIGNIN_MAIN_HEADING} = xpath=//h1' failed: Invalid variable name '${SIGNIN_MAIN_HEADING} = xpath=//h1'.</msg>
+</errors>
+</robot>
