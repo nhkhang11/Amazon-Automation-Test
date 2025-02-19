@@ -20,19 +20,18 @@ Invalid Login
 Search For Product
     LandingPage.Load
     LandingPage.Verify Page Loaded
-
     TopNav.Search for Products
+    SearchResults.Verify Search Completed
 
 Select Product from Search Results
-    SearchResults.Verify Search Completed
     SearchResults.Click Product Link
+    Product.Verify Page Load
 
 Add Product to Cart
-    Product.Verify Page Load
     Product.Add to Cart
+    Cart.Verify Product Added
 
 Begin Checkout
-    Cart.Verify Product Added
     Cart.Proceed to Checkout
     SignIn.Verify SignIn
 

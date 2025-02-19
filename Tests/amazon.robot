@@ -13,7 +13,7 @@ Test Teardown           End Web Test
 ${BROWSER}                edge
 ${FIRST_RESULT}           xpath=(//h2[contains(@class, 'a-size-medium') and contains(@class, 'a-text-normal')]/span)[1]
 ${AMAZON_URL}             https://www.amazon.com/ref=nav_logo
-${SEARCH_ITEM}            Keychron
+${SEARCH_ITEM}            iPhone 15
 ${LOGIN_EMAIL}            admin@robotframeworktutorial.com
 ${LOGIN_PASSWORD}         myPassword1
 
@@ -22,20 +22,31 @@ Should be able to login
     AmazonApp.Login                 ${LOGIN_EMAIL}  ${LOGIN_PASSWORD}
 
 User can search for product
-    [Documentation]                 This is some basic TEST
+    [Documentation]                 This is Search for Product TEST
     [Tags]                          Current
     AmazonApp.Search For Product
-    # sleep                           10s
+
+User can search and view product
+    [Documentation]                 This is Search and View Product TEST
+    [Tags]                          Current
+    AmazonApp.Search For Product
+    AmazonApp.Select Product from Search Results
+
+User can add product to cart
+    [Documentation]                 This is Add Product to Cart TEST
+    [Tags]                          Smoke
+    AmazonApp.Search For Product
+    AmazonApp.Select Product from Search Results
+    AmazonApp.Add Product to Cart
 
 User must sign in to checkout
-    [Documentation]                 This is some basic TEST
+    [Documentation]                 This is Sign In to Checkout TEST
     [Tags]                          Smoke
     AmazonApp.Search For Product
     AmazonApp.Select Product from Search Results
     AmazonApp.Add Product to Cart
     AmazonApp.Begin Checkout
 
-    sleep                            30s
 
 
 

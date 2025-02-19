@@ -1,133 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.12.3 on win32)" generated="2025-02-18T00:34:43.011091" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.12.3 on win32)" generated="2025-02-19T21:03:34.887217" rpa="false" schemaversion="5">
 <suite id="s1" name="Amazon" source="C:\Users\SURFACE\Desktop\CRM\amazon_automation_test\tests\amazon.robot">
 <test id="s1-t1" name="Should be able to login" line="21">
 <kw name="Begin Web Test" owner="Common" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-18T00:34:43.277009" level="INFO">Opening browser 'edge' to base url 'about:blank'.</msg>
+<msg time="2025-02-19T21:03:35.635935" level="INFO">Opening browser 'edge' to base url 'about:blank'.</msg>
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-18T00:34:43.277009" elapsed="1.444694"/>
+<status status="PASS" start="2025-02-19T21:03:35.635935" elapsed="2.250622"/>
 </kw>
-<status status="PASS" start="2025-02-18T00:34:43.276049" elapsed="1.445654"/>
+<status status="PASS" start="2025-02-19T21:03:35.630864" elapsed="2.256202"/>
 </kw>
 <kw name="Login" owner="AmazonApp">
 <kw name="Login With Valid Credentials" owner="SignIn">
 <kw name="Fill Email Field" owner="SignIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-02-18T00:34:44.723700" level="INFO">Filling Email field with admin@robotframeworktutorial.com</msg>
+<msg time="2025-02-19T21:03:37.889596" level="INFO">Filling Email field with admin@robotframeworktutorial.com</msg>
 <arg>Filling Email field with ${Username}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-02-18T00:34:44.723700" elapsed="0.000000"/>
+<status status="PASS" start="2025-02-19T21:03:37.889596" elapsed="0.000000"/>
 </kw>
 <arg>${Username}</arg>
-<status status="PASS" start="2025-02-18T00:34:44.723700" elapsed="0.000000"/>
+<status status="PASS" start="2025-02-19T21:03:37.889596" elapsed="0.001509"/>
 </kw>
 <kw name="Fill Password Field" owner="SignIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-02-18T00:34:44.724699" level="INFO">Filling Password field with myPassword1</msg>
+<msg time="2025-02-19T21:03:37.892121" level="INFO">Filling Password field with myPassword1</msg>
 <arg>Filling Password field with ${Password}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-02-18T00:34:44.724699" elapsed="0.000000"/>
+<status status="PASS" start="2025-02-19T21:03:37.891105" elapsed="0.001016"/>
 </kw>
 <arg>${Password}</arg>
-<status status="PASS" start="2025-02-18T00:34:44.723700" elapsed="0.000999"/>
+<status status="PASS" start="2025-02-19T21:03:37.891105" elapsed="0.001016"/>
 </kw>
 <kw name="Click Submit Button" owner="SignIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-02-18T00:34:44.724699" level="INFO">Clicking submit button</msg>
+<msg time="2025-02-19T21:03:37.892121" level="INFO">Clicking submit button</msg>
 <arg>Clicking submit button</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-02-18T00:34:44.724699" elapsed="0.000000"/>
+<status status="PASS" start="2025-02-19T21:03:37.892121" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-02-18T00:34:44.724699" elapsed="0.000000"/>
+<status status="PASS" start="2025-02-19T21:03:37.892121" elapsed="0.000000"/>
 </kw>
 <arg>${Username}</arg>
 <arg>${Password}</arg>
-<status status="PASS" start="2025-02-18T00:34:44.722701" elapsed="0.001998"/>
+<status status="PASS" start="2025-02-19T21:03:37.888586" elapsed="0.003535"/>
 </kw>
 <arg>${LOGIN_EMAIL}</arg>
 <arg>${LOGIN_PASSWORD}</arg>
-<status status="PASS" start="2025-02-18T00:34:44.722701" elapsed="0.001998"/>
+<status status="PASS" start="2025-02-19T21:03:37.887066" elapsed="0.005055"/>
 </kw>
 <kw name="End Web Test" owner="Common" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-18T00:34:44.725699" elapsed="2.352159"/>
+<status status="PASS" start="2025-02-19T21:03:37.893123" elapsed="2.513986"/>
 </kw>
-<status status="PASS" start="2025-02-18T00:34:44.725699" elapsed="2.353155"/>
+<status status="PASS" start="2025-02-19T21:03:37.893123" elapsed="2.513986"/>
 </kw>
-<status status="PASS" start="2025-02-18T00:34:43.275013" elapsed="3.803841"/>
+<status status="PASS" start="2025-02-19T21:03:35.628328" elapsed="4.779313"/>
 </test>
 <test id="s1-t2" name="User can search for product" line="24">
 <kw name="Begin Web Test" owner="Common" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-18T00:34:47.081950" level="INFO">Opening browser 'edge' to base url 'about:blank'.</msg>
+<msg time="2025-02-19T21:03:40.410677" level="INFO">Opening browser 'edge' to base url 'about:blank'.</msg>
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-18T00:34:47.081950" elapsed="1.463715"/>
+<status status="PASS" start="2025-02-19T21:03:40.409162" elapsed="2.106390"/>
 </kw>
-<status status="PASS" start="2025-02-18T00:34:47.080856" elapsed="1.464809"/>
+<status status="PASS" start="2025-02-19T21:03:40.409162" elapsed="2.106390"/>
 </kw>
 <kw name="Search For Product" owner="AmazonApp">
 <kw name="Load" owner="LandingPage">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-02-18T00:34:48.546670" level="INFO">Opening url 'https://www.amazon.com/ref=nav_logo'</msg>
+<msg time="2025-02-19T21:03:42.518595" level="INFO">Opening url 'https://www.amazon.com/ref=nav_logo'</msg>
 <arg>https://www.amazon.com/ref=nav_logo</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-02-18T00:34:48.546670" elapsed="1.711959"/>
+<status status="PASS" start="2025-02-19T21:03:42.518595" elapsed="1.634480"/>
 </kw>
-<status status="PASS" start="2025-02-18T00:34:48.546670" elapsed="1.711959"/>
+<status status="PASS" start="2025-02-19T21:03:42.518085" elapsed="1.634990"/>
 </kw>
 <kw name="Verify Page Loaded" owner="LandingPage">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Amazon</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-02-18T00:34:50.258629" elapsed="0.036004"/>
+<status status="PASS" start="2025-02-19T21:03:44.154084" elapsed="0.055733"/>
 </kw>
-<status status="PASS" start="2025-02-18T00:34:50.258629" elapsed="0.036004"/>
+<status status="PASS" start="2025-02-19T21:03:44.153075" elapsed="0.057794"/>
 </kw>
 <kw name="Search for Products" owner="TopNav">
 <kw name="Enter Search Items" owner="TopNav">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-18T00:35:20.296292" level="INFO">Slept 30 seconds.</msg>
-<arg>30s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-18T00:34:50.294633" elapsed="30.001659"/>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-02-19T21:03:44.226974" level="INFO">Current page contains element 'id=nav-bb-search'.</msg>
+<arg>${TOPNAV_SEARCH_BAR2}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-02-19T21:03:44.212214" elapsed="0.014760"/>
 </kw>
+<msg time="2025-02-19T21:03:44.227482" level="INFO">${exists_bb} = True</msg>
+<var>${exists_bb}</var>
+<arg>Page Should Contain Element</arg>
+<arg>${TOPNAV_SEARCH_BAR2}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-02-19T21:03:44.212214" elapsed="0.015268"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-02-19T21:03:44.959933" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-80.png"&gt;&lt;img src="selenium-screenshot-80.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-19T21:03:44.959933" level="FAIL">Page should have contained element 'id=twotabsearchtextbox' but did not.</msg>
+<arg>${TOPNAV_SEARCH_BAR1}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="FAIL" start="2025-02-19T21:03:44.227988" elapsed="0.734639">Page should have contained element 'id=twotabsearchtextbox' but did not.</status>
+</kw>
+<msg time="2025-02-19T21:03:44.963631" level="INFO">${exists_tb} = False</msg>
+<var>${exists_tb}</var>
+<arg>Page Should Contain Element</arg>
+<arg>${TOPNAV_SEARCH_BAR1}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-02-19T21:03:44.227482" elapsed="0.736149"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-18T00:35:20.297414" level="INFO">Typing text 'Keychron' into text field 'id=twotabsearchtextbox'.</msg>
-<arg>${TOPNAV_SEARCH_BAR}</arg>
+<msg time="2025-02-19T21:03:44.963631" level="INFO">Typing text 'iPhone 15' into text field 'id=nav-bb-search'.</msg>
+<arg>${TOPNAV_SEARCH_BAR2}</arg>
 <arg>${SEARCH_ITEM}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-18T00:35:20.296292" elapsed="0.142398"/>
+<status status="PASS" start="2025-02-19T21:03:44.963631" elapsed="0.178669"/>
 </kw>
-<status status="PASS" start="2025-02-18T00:34:50.294633" elapsed="30.144057"/>
+<arg>${exists_bb}</arg>
+<arg>Input Text</arg>
+<arg>${TOPNAV_SEARCH_BAR2}</arg>
+<arg>${SEARCH_ITEM}</arg>
+<arg>ELSE IF</arg>
+<arg>${exists_tb}</arg>
+<arg>Input Text</arg>
+<arg>${TOPNAV_SEARCH_BAR1}</arg>
+<arg>${SEARCH_ITEM}</arg>
+<arg>ELSE</arg>
+<arg>Fail</arg>
+<arg>Neither search box (nav-bb-search or twotabsearchtextbox) was found.</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-02-19T21:03:44.963631" elapsed="0.178669"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:03:44.210869" elapsed="0.931431"/>
 </kw>
 <kw name="Submit Search" owner="TopNav">
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2025-02-18T00:35:20.788990" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-66.png"&gt;&lt;img src="selenium-screenshot-66.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-02-18T00:35:20.789990" level="FAIL">Page should have contained element 'xpath://input[@class='nav-bb-button' and @type='submit' and @value='Go']' but did not.</msg>
+<msg time="2025-02-19T21:03:45.160757" level="INFO">Current page contains element 'xpath://input[@class='nav-bb-button' and @type='submit' and @value='Go']'.</msg>
 <arg>${TOPNAV_SEARCH_BUTTON_BB}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="FAIL" start="2025-02-18T00:35:20.438690" elapsed="0.352300">Page should have contained element 'xpath://input[@class='nav-bb-button' and @type='submit' and @value='Go']' but did not.</status>
+<status status="PASS" start="2025-02-19T21:03:45.143310" elapsed="0.017447"/>
 </kw>
-<msg time="2025-02-18T00:35:20.790990" level="INFO">${exists} = False</msg>
+<msg time="2025-02-19T21:03:45.160757" level="INFO">${exists} = True</msg>
 <var>${exists}</var>
 <arg>Page Should Contain Element</arg>
 <arg>${TOPNAV_SEARCH_BUTTON_BB}</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-02-18T00:35:20.438690" elapsed="0.352300"/>
+<status status="PASS" start="2025-02-19T21:03:45.143310" elapsed="0.017447"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-02-18T00:35:20.792086" level="INFO">Clicking button 'xpath://input[@id='nav-search-submit-button' and @type='submit' and @value='Go']'.</msg>
-<arg>${TOPNAV_SEARCH_BUTTON_ID}</arg>
+<msg time="2025-02-19T21:03:45.161768" level="INFO">Clicking button 'xpath://input[@class='nav-bb-button' and @type='submit' and @value='Go']'.</msg>
+<arg>${TOPNAV_SEARCH_BUTTON_BB}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-18T00:35:20.792086" elapsed="2.309078"/>
+<status status="PASS" start="2025-02-19T21:03:45.161768" elapsed="0.510632"/>
 </kw>
 <arg>${exists}</arg>
 <arg>Click Button</arg>
@@ -136,121 +174,576 @@
 <arg>Click Button</arg>
 <arg>${TOPNAV_SEARCH_BUTTON_ID}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-02-18T00:35:20.790990" elapsed="2.311172"/>
+<status status="PASS" start="2025-02-19T21:03:45.161768" elapsed="0.510632"/>
 </kw>
-<status status="PASS" start="2025-02-18T00:35:20.438690" elapsed="2.663472"/>
+<status status="PASS" start="2025-02-19T21:03:45.142300" elapsed="0.530100"/>
 </kw>
-<status status="PASS" start="2025-02-18T00:34:50.294633" elapsed="32.807529"/>
+<status status="PASS" start="2025-02-19T21:03:44.210869" elapsed="1.461531"/>
 </kw>
-<status status="PASS" start="2025-02-18T00:34:48.546670" elapsed="34.555492"/>
+<kw name="Verify Search Completed" owner="SearchResults">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>results for "${SEARCH_ITEM}"</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-19T21:03:45.674673" elapsed="2.429625"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:03:45.673657" elapsed="2.430641"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:03:42.517065" elapsed="5.587233"/>
 </kw>
 <kw name="End Web Test" owner="Common" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-18T00:35:23.102162" elapsed="2.226175"/>
+<status status="PASS" start="2025-02-19T21:03:48.106821" elapsed="2.632094"/>
 </kw>
-<status status="PASS" start="2025-02-18T00:35:23.102162" elapsed="2.226175"/>
+<status status="PASS" start="2025-02-19T21:03:48.105806" elapsed="2.634117"/>
 </kw>
-<doc>This is some basic TEST</doc>
+<doc>This is Search for Product TEST</doc>
 <tag>Current</tag>
-<status status="PASS" start="2025-02-18T00:34:47.080856" elapsed="38.248483"/>
+<status status="PASS" start="2025-02-19T21:03:40.408149" elapsed="10.331774"/>
 </test>
-<test id="s1-t3" name="User must sign in to checkout" line="30">
+<test id="s1-t3" name="User can search and view product" line="29">
 <kw name="Begin Web Test" owner="Common" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-18T00:35:25.330335" level="INFO">Opening browser 'edge' to base url 'about:blank'.</msg>
+<msg time="2025-02-19T21:03:50.746458" level="INFO">Opening browser 'edge' to base url 'about:blank'.</msg>
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-18T00:35:25.330335" elapsed="1.459647"/>
+<status status="PASS" start="2025-02-19T21:03:50.745459" elapsed="2.263253"/>
 </kw>
-<status status="PASS" start="2025-02-18T00:35:25.330335" elapsed="1.459647"/>
+<status status="PASS" start="2025-02-19T21:03:50.743439" elapsed="2.265273"/>
 </kw>
 <kw name="Search For Product" owner="AmazonApp">
 <kw name="Load" owner="LandingPage">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-02-18T00:35:26.790994" level="INFO">Opening url 'https://www.amazon.com/ref=nav_logo'</msg>
+<msg time="2025-02-19T21:03:53.011240" level="INFO">Opening url 'https://www.amazon.com/ref=nav_logo'</msg>
 <arg>https://www.amazon.com/ref=nav_logo</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-02-18T00:35:26.790994" elapsed="2.498491"/>
+<status status="PASS" start="2025-02-19T21:03:53.011240" elapsed="1.230086"/>
 </kw>
-<status status="PASS" start="2025-02-18T00:35:26.790994" elapsed="2.498491"/>
+<status status="PASS" start="2025-02-19T21:03:53.010728" elapsed="1.230598"/>
 </kw>
 <kw name="Verify Page Loaded" owner="LandingPage">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Amazon</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-02-18T00:35:29.289485" elapsed="0.049519"/>
+<status status="PASS" start="2025-02-19T21:03:54.242337" elapsed="0.059767"/>
 </kw>
-<status status="PASS" start="2025-02-18T00:35:29.289485" elapsed="0.049519"/>
+<status status="PASS" start="2025-02-19T21:03:54.241326" elapsed="0.060778"/>
 </kw>
 <kw name="Search for Products" owner="TopNav">
 <kw name="Enter Search Items" owner="TopNav">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-18T00:35:59.340546" level="INFO">Slept 30 seconds.</msg>
-<arg>30s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-18T00:35:29.340003" elapsed="30.000543"/>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-02-19T21:03:54.387898" level="INFO">Current page contains element 'id=nav-bb-search'.</msg>
+<arg>${TOPNAV_SEARCH_BAR2}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-02-19T21:03:54.305123" elapsed="0.082775"/>
 </kw>
+<msg time="2025-02-19T21:03:54.387898" level="INFO">${exists_bb} = True</msg>
+<var>${exists_bb}</var>
+<arg>Page Should Contain Element</arg>
+<arg>${TOPNAV_SEARCH_BAR2}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-02-19T21:03:54.304124" elapsed="0.084786"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-02-19T21:03:55.102623" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-81.png"&gt;&lt;img src="selenium-screenshot-81.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-19T21:03:55.103629" level="FAIL">Page should have contained element 'id=twotabsearchtextbox' but did not.</msg>
+<arg>${TOPNAV_SEARCH_BAR1}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="FAIL" start="2025-02-19T21:03:54.389737" elapsed="0.714894">Page should have contained element 'id=twotabsearchtextbox' but did not.</status>
+</kw>
+<msg time="2025-02-19T21:03:55.105630" level="INFO">${exists_tb} = False</msg>
+<var>${exists_tb}</var>
+<arg>Page Should Contain Element</arg>
+<arg>${TOPNAV_SEARCH_BAR1}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-02-19T21:03:54.388910" elapsed="0.716720"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-18T00:35:59.341652" level="INFO">Typing text 'Keychron' into text field 'id=twotabsearchtextbox'.</msg>
-<msg time="2025-02-18T00:35:59.539876" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-67.png"&gt;&lt;img src="selenium-screenshot-67.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-02-18T00:35:59.539876" level="FAIL">Element with locator 'id=twotabsearchtextbox' not found.</msg>
-<arg>${TOPNAV_SEARCH_BAR}</arg>
+<msg time="2025-02-19T21:03:55.108145" level="INFO">Typing text 'iPhone 15' into text field 'id=nav-bb-search'.</msg>
+<arg>${TOPNAV_SEARCH_BAR2}</arg>
 <arg>${SEARCH_ITEM}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="FAIL" start="2025-02-18T00:35:59.340546" elapsed="0.201376">Element with locator 'id=twotabsearchtextbox' not found.</status>
+<status status="PASS" start="2025-02-19T21:03:55.107137" elapsed="0.212082"/>
 </kw>
-<status status="FAIL" start="2025-02-18T00:35:29.340003" elapsed="30.201919">Element with locator 'id=twotabsearchtextbox' not found.</status>
+<arg>${exists_bb}</arg>
+<arg>Input Text</arg>
+<arg>${TOPNAV_SEARCH_BAR2}</arg>
+<arg>${SEARCH_ITEM}</arg>
+<arg>ELSE IF</arg>
+<arg>${exists_tb}</arg>
+<arg>Input Text</arg>
+<arg>${TOPNAV_SEARCH_BAR1}</arg>
+<arg>${SEARCH_ITEM}</arg>
+<arg>ELSE</arg>
+<arg>Fail</arg>
+<arg>Neither search box (nav-bb-search or twotabsearchtextbox) was found.</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-02-19T21:03:55.105630" elapsed="0.213589"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:03:54.304124" elapsed="1.015095"/>
 </kw>
 <kw name="Submit Search" owner="TopNav">
-<status status="NOT RUN" start="2025-02-18T00:35:59.541922" elapsed="0.000000"/>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-02-19T21:03:55.366338" level="INFO">Current page contains element 'xpath://input[@class='nav-bb-button' and @type='submit' and @value='Go']'.</msg>
+<arg>${TOPNAV_SEARCH_BUTTON_BB}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-02-19T21:03:55.321740" elapsed="0.044598"/>
 </kw>
-<status status="FAIL" start="2025-02-18T00:35:29.339004" elapsed="30.202918">Element with locator 'id=twotabsearchtextbox' not found.</status>
+<msg time="2025-02-19T21:03:55.367337" level="INFO">${exists} = True</msg>
+<var>${exists}</var>
+<arg>Page Should Contain Element</arg>
+<arg>${TOPNAV_SEARCH_BUTTON_BB}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-02-19T21:03:55.320729" elapsed="0.046608"/>
 </kw>
-<status status="FAIL" start="2025-02-18T00:35:26.789982" elapsed="32.751940">Element with locator 'id=twotabsearchtextbox' not found.</status>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-02-19T21:03:55.368867" level="INFO">Clicking button 'xpath://input[@class='nav-bb-button' and @type='submit' and @value='Go']'.</msg>
+<arg>${TOPNAV_SEARCH_BUTTON_BB}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-19T21:03:55.368867" elapsed="0.714239"/>
+</kw>
+<arg>${exists}</arg>
+<arg>Click Button</arg>
+<arg>${TOPNAV_SEARCH_BUTTON_BB}</arg>
+<arg>ELSE</arg>
+<arg>Click Button</arg>
+<arg>${TOPNAV_SEARCH_BUTTON_ID}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-02-19T21:03:55.367852" elapsed="0.715254"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:03:55.320729" elapsed="0.762377"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:03:54.303106" elapsed="1.781297"/>
+</kw>
+<kw name="Verify Search Completed" owner="SearchResults">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>results for "${SEARCH_ITEM}"</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-19T21:03:56.085422" elapsed="2.773728"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:03:56.084403" elapsed="2.774747"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:03:53.009724" elapsed="5.849426"/>
 </kw>
 <kw name="Select Product from Search Results" owner="AmazonApp">
-<status status="NOT RUN" start="2025-02-18T00:35:59.542974" elapsed="0.000000"/>
+<kw name="Click Product Link" owner="SearchResults">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-19T21:03:58.862681" level="INFO">Clicking element 'xpath=(//h2[contains(@class, 'a-size-medium') and contains(@class, 'a-text-normal')]/span)[1]'.</msg>
+<arg>${FIRST_RESULT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-19T21:03:58.861690" elapsed="3.780181"/>
 </kw>
-<kw name="Add Product to Cart" owner="AmazonApp">
-<status status="NOT RUN" start="2025-02-18T00:35:59.542974" elapsed="0.000000"/>
+<doc>Clicks on the first product in the search result list</doc>
+<status status="PASS" start="2025-02-19T21:03:58.861690" elapsed="3.780181"/>
 </kw>
-<kw name="Begin Checkout" owner="AmazonApp">
-<status status="NOT RUN" start="2025-02-18T00:35:59.542974" elapsed="0.000000"/>
+<kw name="Verify Page Load" owner="Product">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2025-02-19T21:04:08.165182" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-82.png"&gt;&lt;img src="selenium-screenshot-82.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-19T21:04:08.166199" level="FAIL">Text 'Back to results' did not appear in 5 seconds.</msg>
+<arg>Back to results</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="FAIL" start="2025-02-19T21:04:02.643851" elapsed="5.525351">Text 'Back to results' did not appear in 5 seconds.</status>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>30s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-02-18T00:35:59.542974" elapsed="0.000000"/>
+<status status="FAIL" start="2025-02-19T21:04:02.642854" elapsed="5.526348">Text 'Back to results' did not appear in 5 seconds.</status>
+</kw>
+<status status="FAIL" start="2025-02-19T21:03:58.860666" elapsed="9.310050">Text 'Back to results' did not appear in 5 seconds.</status>
 </kw>
 <kw name="End Web Test" owner="Common" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-18T00:35:59.542974" elapsed="2.208683"/>
+<status status="PASS" start="2025-02-19T21:04:08.173657" elapsed="2.689382"/>
 </kw>
-<status status="PASS" start="2025-02-18T00:35:59.542974" elapsed="2.208683"/>
+<status status="PASS" start="2025-02-19T21:04:08.172257" elapsed="2.691767"/>
 </kw>
-<doc>This is some basic TEST</doc>
+<doc>This is Search and View Product TEST</doc>
+<tag>Current</tag>
+<status status="FAIL" start="2025-02-19T21:03:50.742443" elapsed="20.121581">Text 'Back to results' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t4" name="User can add product to cart" line="35">
+<kw name="Begin Web Test" owner="Common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-19T21:04:10.871540" level="INFO">Opening browser 'edge' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-19T21:04:10.871024" elapsed="2.455990"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:04:10.869039" elapsed="2.457975"/>
+</kw>
+<kw name="Search For Product" owner="AmazonApp">
+<kw name="Load" owner="LandingPage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-02-19T21:04:13.329017" level="INFO">Opening url 'https://www.amazon.com/ref=nav_logo'</msg>
+<arg>https://www.amazon.com/ref=nav_logo</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-02-19T21:04:13.329017" elapsed="3.926156"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:04:13.328014" elapsed="3.928169"/>
+</kw>
+<kw name="Verify Page Loaded" owner="LandingPage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Amazon</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-19T21:04:17.257181" elapsed="0.137393"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:04:17.256183" elapsed="0.138391"/>
+</kw>
+<kw name="Search for Products" owner="TopNav">
+<kw name="Enter Search Items" owner="TopNav">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-02-19T21:04:18.405217" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-83.png"&gt;&lt;img src="selenium-screenshot-83.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-19T21:04:18.406204" level="FAIL">Page should have contained element 'id=nav-bb-search' but did not.</msg>
+<arg>${TOPNAV_SEARCH_BAR2}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="FAIL" start="2025-02-19T21:04:17.397578" elapsed="1.010626">Page should have contained element 'id=nav-bb-search' but did not.</status>
+</kw>
+<msg time="2025-02-19T21:04:18.408204" level="INFO">${exists_bb} = False</msg>
+<var>${exists_bb}</var>
+<arg>Page Should Contain Element</arg>
+<arg>${TOPNAV_SEARCH_BAR2}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-02-19T21:04:17.397578" elapsed="1.010626"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-02-19T21:04:18.446863" level="INFO">Current page contains element 'id=twotabsearchtextbox'.</msg>
+<arg>${TOPNAV_SEARCH_BAR1}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-02-19T21:04:18.409203" elapsed="0.038170"/>
+</kw>
+<msg time="2025-02-19T21:04:18.447373" level="INFO">${exists_tb} = True</msg>
+<var>${exists_tb}</var>
+<arg>Page Should Contain Element</arg>
+<arg>${TOPNAV_SEARCH_BAR1}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-02-19T21:04:18.409203" elapsed="0.038170"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-19T21:04:18.449385" level="INFO">Typing text 'iPhone 15' into text field 'id=twotabsearchtextbox'.</msg>
+<arg>${TOPNAV_SEARCH_BAR1}</arg>
+<arg>${SEARCH_ITEM}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-19T21:04:18.448384" elapsed="0.515832"/>
+</kw>
+<arg>${exists_bb}</arg>
+<arg>Input Text</arg>
+<arg>${TOPNAV_SEARCH_BAR2}</arg>
+<arg>${SEARCH_ITEM}</arg>
+<arg>ELSE IF</arg>
+<arg>${exists_tb}</arg>
+<arg>Input Text</arg>
+<arg>${TOPNAV_SEARCH_BAR1}</arg>
+<arg>${SEARCH_ITEM}</arg>
+<arg>ELSE</arg>
+<arg>Fail</arg>
+<arg>Neither search box (nav-bb-search or twotabsearchtextbox) was found.</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-02-19T21:04:18.447373" elapsed="0.516843"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:04:17.395574" elapsed="1.568642"/>
+</kw>
+<kw name="Submit Search" owner="TopNav">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-02-19T21:04:20.206274" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-84.png"&gt;&lt;img src="selenium-screenshot-84.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-19T21:04:20.207274" level="FAIL">Page should have contained element 'xpath://input[@class='nav-bb-button' and @type='submit' and @value='Go']' but did not.</msg>
+<arg>${TOPNAV_SEARCH_BUTTON_BB}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="FAIL" start="2025-02-19T21:04:18.967218" elapsed="1.241054">Page should have contained element 'xpath://input[@class='nav-bb-button' and @type='submit' and @value='Go']' but did not.</status>
+</kw>
+<msg time="2025-02-19T21:04:20.209290" level="INFO">${exists} = False</msg>
+<var>${exists}</var>
+<arg>Page Should Contain Element</arg>
+<arg>${TOPNAV_SEARCH_BUTTON_BB}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-02-19T21:04:18.966218" elapsed="1.243072"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-02-19T21:04:20.211878" level="INFO">Clicking button 'xpath://input[@id='nav-search-submit-button' and @type='submit' and @value='Go']'.</msg>
+<arg>${TOPNAV_SEARCH_BUTTON_ID}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-19T21:04:20.211352" elapsed="3.944764"/>
+</kw>
+<arg>${exists}</arg>
+<arg>Click Button</arg>
+<arg>${TOPNAV_SEARCH_BUTTON_BB}</arg>
+<arg>ELSE</arg>
+<arg>Click Button</arg>
+<arg>${TOPNAV_SEARCH_BUTTON_ID}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-02-19T21:04:20.210800" elapsed="3.945316"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:04:18.964216" elapsed="5.191900"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:04:17.395574" elapsed="6.760542"/>
+</kw>
+<kw name="Verify Search Completed" owner="SearchResults">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>results for "${SEARCH_ITEM}"</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-19T21:04:24.157116" elapsed="0.103362"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:04:24.157116" elapsed="0.104896"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:04:13.328014" elapsed="10.933998"/>
+</kw>
+<kw name="Select Product from Search Results" owner="AmazonApp">
+<kw name="Click Product Link" owner="SearchResults">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-19T21:04:24.265042" level="INFO">Clicking element 'xpath=(//h2[contains(@class, 'a-size-medium') and contains(@class, 'a-text-normal')]/span)[1]'.</msg>
+<arg>${FIRST_RESULT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-19T21:04:24.264026" elapsed="11.309194"/>
+</kw>
+<doc>Clicks on the first product in the search result list</doc>
+<status status="PASS" start="2025-02-19T21:04:24.263022" elapsed="11.310811"/>
+</kw>
+<kw name="Verify Page Load" owner="Product">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Back to results</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-19T21:04:35.575219" elapsed="0.296850"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:04:35.574222" elapsed="0.297847"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:04:24.262012" elapsed="11.610057"/>
+</kw>
+<kw name="Add Product to Cart" owner="AmazonApp">
+<kw name="Add to Cart" owner="Product">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-02-19T21:04:35.875597" level="INFO">Clicking button 'id=add-to-cart-button'.</msg>
+<msg time="2025-02-19T21:04:36.722432" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-85.png"&gt;&lt;img src="selenium-screenshot-85.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-19T21:04:36.723455" level="FAIL">Button with locator 'id=add-to-cart-button' not found.</msg>
+<arg>id=add-to-cart-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2025-02-19T21:04:35.875597" elapsed="0.956529">Button with locator 'id=add-to-cart-button' not found.</status>
+</kw>
+<status status="FAIL" start="2025-02-19T21:04:35.875083" elapsed="0.958061">Button with locator 'id=add-to-cart-button' not found.</status>
+</kw>
+<kw name="Verify Product Added" owner="Cart">
+<status status="NOT RUN" start="2025-02-19T21:04:36.834830" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-02-19T21:04:35.873766" elapsed="0.961064">Button with locator 'id=add-to-cart-button' not found.</status>
+</kw>
+<kw name="End Web Test" owner="Common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-19T21:04:36.837966" elapsed="2.444052"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:04:36.836946" elapsed="2.446093"/>
+</kw>
+<doc>This is Add Product to Cart TEST</doc>
 <tag>Smoke</tag>
-<status status="FAIL" start="2025-02-18T00:35:25.329339" elapsed="36.423202">Element with locator 'id=twotabsearchtextbox' not found.</status>
+<status status="FAIL" start="2025-02-19T21:04:10.868021" elapsed="28.415018">Button with locator 'id=add-to-cart-button' not found.</status>
+</test>
+<test id="s1-t5" name="User must sign in to checkout" line="42">
+<kw name="Begin Web Test" owner="Common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-19T21:04:39.289054" level="INFO">Opening browser 'edge' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-19T21:04:39.289054" elapsed="2.217464"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:04:39.288055" elapsed="2.219464"/>
+</kw>
+<kw name="Search For Product" owner="AmazonApp">
+<kw name="Load" owner="LandingPage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-02-19T21:04:41.509522" level="INFO">Opening url 'https://www.amazon.com/ref=nav_logo'</msg>
+<arg>https://www.amazon.com/ref=nav_logo</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-02-19T21:04:41.509522" elapsed="6.296428"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:04:41.508522" elapsed="6.297428"/>
+</kw>
+<kw name="Verify Page Loaded" owner="LandingPage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Amazon</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-19T21:04:47.806948" elapsed="0.099344"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:04:47.805950" elapsed="0.101343"/>
+</kw>
+<kw name="Search for Products" owner="TopNav">
+<kw name="Enter Search Items" owner="TopNav">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-02-19T21:04:48.808550" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-86.png"&gt;&lt;img src="selenium-screenshot-86.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-19T21:04:48.809569" level="FAIL">Page should have contained element 'id=nav-bb-search' but did not.</msg>
+<arg>${TOPNAV_SEARCH_BAR2}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="FAIL" start="2025-02-19T21:04:47.910847" elapsed="0.899745">Page should have contained element 'id=nav-bb-search' but did not.</status>
+</kw>
+<msg time="2025-02-19T21:04:48.810592" level="INFO">${exists_bb} = False</msg>
+<var>${exists_bb}</var>
+<arg>Page Should Contain Element</arg>
+<arg>${TOPNAV_SEARCH_BAR2}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-02-19T21:04:47.909326" elapsed="0.901266"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-02-19T21:04:48.847324" level="INFO">Current page contains element 'id=twotabsearchtextbox'.</msg>
+<arg>${TOPNAV_SEARCH_BAR1}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-02-19T21:04:48.812118" elapsed="0.036212"/>
+</kw>
+<msg time="2025-02-19T21:04:48.848330" level="INFO">${exists_tb} = True</msg>
+<var>${exists_tb}</var>
+<arg>Page Should Contain Element</arg>
+<arg>${TOPNAV_SEARCH_BAR1}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-02-19T21:04:48.811606" elapsed="0.039286"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-19T21:04:48.855065" level="INFO">Typing text 'iPhone 15' into text field 'id=twotabsearchtextbox'.</msg>
+<arg>${TOPNAV_SEARCH_BAR1}</arg>
+<arg>${SEARCH_ITEM}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-19T21:04:48.853037" elapsed="0.895145"/>
+</kw>
+<arg>${exists_bb}</arg>
+<arg>Input Text</arg>
+<arg>${TOPNAV_SEARCH_BAR2}</arg>
+<arg>${SEARCH_ITEM}</arg>
+<arg>ELSE IF</arg>
+<arg>${exists_tb}</arg>
+<arg>Input Text</arg>
+<arg>${TOPNAV_SEARCH_BAR1}</arg>
+<arg>${SEARCH_ITEM}</arg>
+<arg>ELSE</arg>
+<arg>Fail</arg>
+<arg>Neither search box (nav-bb-search or twotabsearchtextbox) was found.</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-02-19T21:04:48.852017" elapsed="0.896165"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:04:47.909326" elapsed="1.844054"/>
+</kw>
+<kw name="Submit Search" owner="TopNav">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-02-19T21:04:50.642193" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-87.png"&gt;&lt;img src="selenium-screenshot-87.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-19T21:04:50.643203" level="FAIL">Page should have contained element 'xpath://input[@class='nav-bb-button' and @type='submit' and @value='Go']' but did not.</msg>
+<arg>${TOPNAV_SEARCH_BUTTON_BB}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="FAIL" start="2025-02-19T21:04:49.757423" elapsed="0.888913">Page should have contained element 'xpath://input[@class='nav-bb-button' and @type='submit' and @value='Go']' but did not.</status>
+</kw>
+<msg time="2025-02-19T21:04:50.646336" level="INFO">${exists} = False</msg>
+<var>${exists}</var>
+<arg>Page Should Contain Element</arg>
+<arg>${TOPNAV_SEARCH_BUTTON_BB}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-02-19T21:04:49.755433" elapsed="0.890903"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-02-19T21:04:50.655784" level="INFO">Clicking button 'xpath://input[@id='nav-search-submit-button' and @type='submit' and @value='Go']'.</msg>
+<arg>${TOPNAV_SEARCH_BUTTON_ID}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-19T21:04:50.654766" elapsed="3.419351"/>
+</kw>
+<arg>${exists}</arg>
+<arg>Click Button</arg>
+<arg>${TOPNAV_SEARCH_BUTTON_BB}</arg>
+<arg>ELSE</arg>
+<arg>Click Button</arg>
+<arg>${TOPNAV_SEARCH_BUTTON_ID}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-02-19T21:04:50.647354" elapsed="3.426763"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:04:49.754408" elapsed="4.320713"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:04:47.907293" elapsed="6.167828"/>
+</kw>
+<kw name="Verify Search Completed" owner="SearchResults">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>results for "${SEARCH_ITEM}"</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-19T21:04:54.075121" elapsed="0.059792"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:04:54.075121" elapsed="0.060805"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:04:41.507519" elapsed="12.628407"/>
+</kw>
+<kw name="Select Product from Search Results" owner="AmazonApp">
+<kw name="Click Product Link" owner="SearchResults">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-19T21:04:54.137921" level="INFO">Clicking element 'xpath=(//h2[contains(@class, 'a-size-medium') and contains(@class, 'a-text-normal')]/span)[1]'.</msg>
+<arg>${FIRST_RESULT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-19T21:04:54.136928" elapsed="3.742376"/>
+</kw>
+<doc>Clicks on the first product in the search result list</doc>
+<status status="PASS" start="2025-02-19T21:04:54.136928" elapsed="3.742376"/>
+</kw>
+<kw name="Verify Page Load" owner="Product">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Back to results</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-19T21:04:57.881490" elapsed="0.119348"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:04:57.879304" elapsed="0.121534"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:04:54.135926" elapsed="3.864912"/>
+</kw>
+<kw name="Add Product to Cart" owner="AmazonApp">
+<kw name="Add to Cart" owner="Product">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-02-19T21:04:58.001913" level="INFO">Clicking button 'id=add-to-cart-button'.</msg>
+<msg time="2025-02-19T21:04:58.773108" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-88.png"&gt;&lt;img src="selenium-screenshot-88.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-19T21:04:58.773108" level="FAIL">Button with locator 'id=add-to-cart-button' not found.</msg>
+<arg>id=add-to-cart-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2025-02-19T21:04:58.001913" elapsed="0.773211">Button with locator 'id=add-to-cart-button' not found.</status>
+</kw>
+<status status="FAIL" start="2025-02-19T21:04:58.001913" elapsed="0.773211">Button with locator 'id=add-to-cart-button' not found.</status>
+</kw>
+<kw name="Verify Product Added" owner="Cart">
+<status status="NOT RUN" start="2025-02-19T21:04:58.776660" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-02-19T21:04:58.001383" elapsed="0.775277">Button with locator 'id=add-to-cart-button' not found.</status>
+</kw>
+<kw name="Begin Checkout" owner="AmazonApp">
+<status status="NOT RUN" start="2025-02-19T21:04:58.777672" elapsed="0.000000"/>
+</kw>
+<kw name="End Web Test" owner="Common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-19T21:04:58.780677" elapsed="2.841582"/>
+</kw>
+<status status="PASS" start="2025-02-19T21:04:58.779683" elapsed="2.842576"/>
+</kw>
+<doc>This is Sign In to Checkout TEST</doc>
+<tag>Smoke</tag>
+<status status="FAIL" start="2025-02-19T21:04:39.286053" elapsed="22.337223">Button with locator 'id=add-to-cart-button' not found.</status>
 </test>
 <doc>first test</doc>
-<status status="FAIL" start="2025-02-18T00:34:43.012090" elapsed="78.740451"/>
+<status status="FAIL" start="2025-02-19T21:03:34.892357" elapsed="86.735456"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="1" skip="0">All Tests</stat>
+<stat pass="2" fail="3" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">Current</stat>
-<stat pass="0" fail="1" skip="0">Smoke</stat>
+<stat pass="1" fail="1" skip="0">Current</stat>
+<stat pass="0" fail="2" skip="0">Smoke</stat>
 </tag>
 <suite>
-<stat name="Amazon" id="s1" pass="2" fail="1" skip="0">Amazon</stat>
+<stat name="Amazon" id="s1" pass="2" fail="3" skip="0">Amazon</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-02-18T00:34:43.272092" level="ERROR">Error in file 'C:\Users\SURFACE\Desktop\CRM\amazon_automation_test\Resources\PO\SignIn.robot' on line 6: Setting variable '${SIGNIN_MAIN_HEADING} = xpath=//h1' failed: Invalid variable name '${SIGNIN_MAIN_HEADING} = xpath=//h1'.</msg>
+<msg time="2025-02-19T21:03:35.619857" level="ERROR">Error in file 'C:\Users\SURFACE\Desktop\CRM\amazon_automation_test\Resources\PO\SignIn.robot' on line 6: Setting variable '${SIGNIN_MAIN_HEADING} = xpath=//h1' failed: Invalid variable name '${SIGNIN_MAIN_HEADING} = xpath=//h1'.</msg>
 </errors>
 </robot>
