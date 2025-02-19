@@ -22,20 +22,18 @@ Should be able to login
     AmazonApp.Login                 ${LOGIN_EMAIL}  ${LOGIN_PASSWORD}
 
 User can search for product
-    [Documentation]                 This is some basic TEST
+    [Documentation]                 This is Search for Product TEST
     [Tags]                          Current
     AmazonApp.Search For Product
     # sleep                           10s
 
 User must sign in to checkout
-    [Documentation]                 This is some basic TEST
+    [Documentation]                 This is Sign In to Checkout  TEST
     [Tags]                          Smoke
     AmazonApp.Search For Product
     AmazonApp.Select Product from Search Results
     AmazonApp.Add Product to Cart
     AmazonApp.Begin Checkout
-
-    sleep                            30s
 
 
 
