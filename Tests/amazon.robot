@@ -46,9 +46,3 @@ User must sign in to checkout
     AmazonApp.Select Product from Search Results
     AmazonApp.Add Product to Cart
     AmazonApp.Begin Checkout
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 05efde68160815b4bb2f5f57da1144010e86ded9
-

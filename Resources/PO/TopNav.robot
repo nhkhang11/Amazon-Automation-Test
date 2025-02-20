@@ -22,7 +22,6 @@ Enter Search Items
     ...    ELSE    Fail    Neither search box (nav-bb-search or twotabsearchtextbox) was found.
 
 Submit Search
-    # Click Button                    ${TOPNAV_SEARCH_BUTTON}
 
     ${exists}=    Run Keyword And Return Status    Page Should Contain Element    ${TOPNAV_SEARCH_BUTTON_BB}
     Run Keyword If    ${exists}    Click Button    ${TOPNAV_SEARCH_BUTTON_BB}
