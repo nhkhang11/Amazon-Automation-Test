@@ -40,20 +40,12 @@ User can add product to cart
     AmazonApp.Add Product to Cart
 
 User must sign in to checkout
-<<<<<<< HEAD
     [Documentation]                 This is Sign In to Checkout TEST
-=======
-    [Documentation]                 This is Sign In to Checkout  TEST
->>>>>>> 36f727b9d1a463f3595f7882502a7ca43262a954
     [Tags]                          Smoke
     AmazonApp.Search For Product
     AmazonApp.Select Product from Search Results
     AmazonApp.Add Product to Cart
     AmazonApp.Begin Checkout
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 36f727b9d1a463f3595f7882502a7ca43262a954
 
 
