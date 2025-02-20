@@ -13,9 +13,9 @@ Login
     SignIn.Login With Valid Credentials     ${Username}     ${Password}
 
 Invalid Login
-    SignIn.Fill Email Field             bogus@bogus.com
-    SignIn.Fill Password Field          badPassword
-    SignIn.Click Submit Button
+    SignIn.Fill "Email" Field             bogus@bogus.com
+    SignIn.Fill "Password" Field          badPassword
+    SignIn.Click "Sign In" Button
 
 Search For Product
     LandingPage.Load

@@ -13,9 +13,9 @@ Test Teardown           End Web Test
 ${BROWSER}                edge
 ${FIRST_RESULT}           xpath=(//h2[contains(@class, 'a-size-medium') and contains(@class, 'a-text-normal')]/span)[1]
 ${AMAZON_URL}             https://www.amazon.com/ref=nav_logo
-${SEARCH_ITEM}            iPhone 15
-${LOGIN_EMAIL}            admin@robotframeworktutorial.com
-${LOGIN_PASSWORD}         myPassword1
+${SEARCH_ITEM}            Keychron
+${LOGIN_EMAIL}            khang.nguyenhuy0402@gmail.com
+${LOGIN_PASSWORD}         04022001
 
 *** Test Cases ***
 Should be able to login
@@ -40,20 +40,11 @@ User can add product to cart
     AmazonApp.Add Product to Cart
 
 User must sign in to checkout
-<<<<<<< HEAD
     [Documentation]                 This is Sign In to Checkout TEST
-=======
-    [Documentation]                 This is Sign In to Checkout  TEST
->>>>>>> 36f727b9d1a463f3595f7882502a7ca43262a954
     [Tags]                          Smoke
     AmazonApp.Search For Product
     AmazonApp.Select Product from Search Results
     AmazonApp.Add Product to Cart
     AmazonApp.Begin Checkout
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 36f727b9d1a463f3595f7882502a7ca43262a954
 
 
