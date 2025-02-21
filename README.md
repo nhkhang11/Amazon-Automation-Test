@@ -5,7 +5,7 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Test Case](#test case)
+- [TestCase](#testcase)
 - [Requirements](#requirements)
 - [Resource](#resource)
 - [Installation](#installation)
